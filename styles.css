@@ -1,0 +1,584 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    position: relative;
+}
+
+/* header */
+header{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 10;
+    height: 150px;
+}
+
+header .container{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+
+    width: 190px;
+    margin-left: -20px;
+}
+
+.nav{
+
+    display: flex;
+    align-items: center;
+    justify-items: end;
+}
+
+.navItem a{
+
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-left: 34px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navItem a:hover, .navItem a:active{
+
+    border-bottom: 4px solid #fff;
+    padding-bottom: 10px;
+}
+
+.navItem .btn-login{
+
+    background-color: #EB2121;
+    width: 76px;
+    height: 38px;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #fff;
+    display: flex;
+    border-radius: 10px;
+    border: none;
+    border-right: 5px solid #1333D4;
+    border-top: 2px solid #1333D4;
+    align-items: center;
+    justify-content: center;
+    margin-left: 64px ;
+}
+
+.navItem .btn-login:hover{
+    border-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.s1{
+
+    padding-top: 250px;
+    position: relative;
+    height: 100vh;
+}
+
+.s1 .p1{
+
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 700;
+    color: #1333D4;
+    margin-bottom: 11px;
+}
+
+.s1 .title{
+
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.s1 .p2{
+
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
+.s1 .infos{
+
+    width: 125%;
+}
+
+.s1 .image{
+
+    margin-right: 5px;
+}
+
+.s1 .p3{
+
+    width: fit-content;
+    font-size: 25px;
+    line-height: 37.5px;
+    font-weight: 400;
+    margin-bottom: 5px; 
+    border-bottom: 3px solid #AB21EB;
+}
+
+.s1 .p4{
+
+    width: fit-content;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+
+.s1 .info b{
+
+    color: #EB2121;
+    font-weight: 700;
+}
+
+.s1 .mainImg img{
+
+    position: absolute;
+    top: 70px;
+}
+
+
+.s2 .p1{
+
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 700;
+    margin-bottom: 21px;
+}
+
+.s2 .p2{
+
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-bottom: 48px;
+}
+
+.s2 .p2 a{
+
+    color: #EB2121;
+    text-decoration: none;
+}
+
+.s2 .p3{
+
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-bottom: 48px;
+}
+
+.s2 .p4{
+
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #AB21EB;
+    margin-bottom: 21px;
+}
+
+
+.s3 .title{
+
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.s3 .botao a{
+
+    background-color: #AB21EB;
+    width: 113px;
+    height: 38px;
+    color: #fff;
+    text-align: end;
+    text-decoration: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 100px;
+}
+
+.cardReview{
+
+    height: 300px;
+    width: 370px;
+}
+
+.cardReview .top{
+
+    background-color: #fff; 
+    width: 100%;
+    height: 73%;
+    border-right: 8px solid #AB21EB;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.cardReview .bottom{
+
+    background-color: #EB2121;
+    width: 100%;
+    height: 27%;
+    border-right: 8px solid #AB21EB;
+    border-bottom: 8px solid #AB21EB;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+
+/* pagina listagem de reviews */
+.listagemS1{
+
+    padding-top: 250px;
+}
+
+.pesquisa input{
+
+    width: 382px;
+    height: 50px;
+    border: 3px solid #3CB4D4;
+    border-radius: 10px;
+    padding-left: 27px;
+    margin-bottom: 20px;
+}
+
+.pesquisa input::placeholder{
+
+    color: #3CB4D4;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.filtros{
+
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 111px;
+}
+
+.filtros select{
+
+    height: 38px;
+    width: 169px;
+    background-color: #AB21EB;
+    border-radius: 10px;
+    padding-left: 20px;
+    color: #fff;
+    margin-right: 10px;
+    border: none;
+}
+
+.listagemS1 .cardReview{
+
+    box-shadow: 8px 9px 20px -5px #AB21EB;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    width: 95%;
+}
+
+.listagemS1 .cardReview .top, .listagemS1 .cardReview .bottom{
+
+    border: none;
+}
+
+.bottom h4{
+
+    font-size: 17px;
+    line-height: 25.5px;
+    font-weight: 700;
+    padding: 15px 0 8px 15px;
+    margin: 0;
+    color: white;
+}
+
+.bottom p{
+
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+    padding: 0px 0 0px 15px;
+    margin: 0;
+    color: white;
+}
+
+.carregar-mais{
+
+    width: 100%;
+    text-align: center;
+    margin: 100px 0;
+}
+
+.carregar-mais a{
+    padding-inline: 70px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    text-decoration: none;
+    background-color: #1333D4;
+    color: white;
+    border-radius: 10px;
+    font-weight: 700px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+/* pagina saiba mais */
+
+.sectionSaibaMais{
+    background-color: #E5E5E5;
+    position: relative;
+    height: 1080px;
+}
+
+.sectionSaibaMais .divPseudoElemento1{
+    position: absolute;
+    left: 176px;
+    top: 345px;
+}
+
+.sectionSaibaMais .divPseudoElemento2{
+    position: absolute;
+    left: 1289px;
+    top: 345px;
+}
+
+.sectionSaibaMais .container{
+    padding-top: 16%;
+}
+
+.sectionSaibaMais .container h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+    color: #EB2121;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.sectionSaibaMais .container h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    max-width: 847px;
+    margin: 0 auto;
+    color: #EB2121;
+    margin-bottom: 53px;
+}
+
+.sectionSaibaMais .container p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    max-width: 815px;
+    margin: 0 auto;
+    color: #1333D4;
+    margin-bottom: 2%;
+}
+
+.sectionSaibaMais .container .pNotaRodape{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 22.5px;
+    text-align: center;
+    color: #1333D4;
+}
+
+/* pagina login */
+
+.sectionLogin .container{
+    padding-top: 13%;
+}
+
+.sectionLogin .container .divLogin{
+    background: #02061A;
+    box-shadow: 2px 4px 78px 21px rgba(171, 33, 235, 0.28);
+    height: 587px;
+    width: 72%;
+    margin: 0 auto;
+}
+
+.sectionLogin .container .divLogin .row{
+    width: 100%;
+}
+
+.sectionLogin .container .divLogin .row .col-5{
+    background-color: #FFFFFF;
+}
+
+.sectionLogin .container .divLogin .row .col-5 h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    color: #EB2121;
+    text-align: center;
+    margin-top: 47px;
+    margin-bottom: 37px;
+}
+
+.sectionLogin .container .divLogin .row .col-5 form{
+    width: 83%;
+    margin: 0 auto;
+}
+
+.sectionLogin .container .divLogin .row .col-5 form input{
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border: 3px solid rgba(60, 180, 212, 0.58);
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 19px;
+}
+
+.sectionLogin .container .divLogin .row .col-5 form input::placeholder{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #3CB4D4;
+}
+
+.sectionLogin .container .divLogin .row .col-5 form .linkEsqueceuSenha{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.sectionLogin .container .divLogin .row .col-5 form p{
+    text-align: right;
+    margin-bottom: 36px;
+}
+
+.sectionLogin .container .divLogin .row .col-5 form .btnEntrar{
+    width: 100%;
+    height: 38px;
+    background-color: #1333D4;
+    border-radius: 10px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.sectionLogin .container .divLogin .row .col-5 form .pOu{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19px;
+    color: #000000;
+    text-align: center;
+    margin-top: 19px;
+    margin-bottom: 13px;
+}
+
+.sectionLogin .container .divLogin .row .col-5 form .d-flex{
+    justify-content: space-between;
+}
+
+.sectionLogin .container .divLogin .row .col-5 form .d-flex a{
+    text-decoration: none;
+}
+
+.sectionLogin .container .divLogin .row .col-5 form .d-flex a .divGoogle{
+    width: 145px;
+    height: 45px;
+    background-color: #FFFFFF;
+    border: 2px solid #1333D4;
+    border-radius: 10px;
+    display: flex;
+    padding: 10px 33px;
+}
+
+.sectionLogin .container .divLogin .row .col-5 form .d-flex a .divGoogle p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+    margin-left: 7px;
+}
+
+.sectionLogin .container .divLogin .row .col-5 form .d-flex a .divFacebook{
+    width: 145px;
+    height: 45px;
+    background-color: #FFFFFF;
+    border: 2px solid #1333D4;
+    border-radius: 10px;
+    display: flex;
+    padding: 10px 33px;
+}
+
+.sectionLogin .container .divLogin .row .col-5 form .d-flex a .divFacebook p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+    margin-left: 7px;
+}
+
+.sectionLogin .container .divLogin .row .col-5 form .pNaoPossuiConta{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #000000;
+    margin-top: 34px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sectionLogin .container .divLogin .row .col-5 form .btnCriarConta{
+    width: 100%;
+    height: 38px;
+    background-color: #1333D4;
+    border-radius: 10px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
